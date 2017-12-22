@@ -1,21 +1,21 @@
-Item Catalog Application
+# Item Catalog Application #
 
 Developed an application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
 
-About the Project:
+## About the Project: ##
 
 This project is a RESTful web application using the Python framework Flask along with implementing third-party OAuth authentication. Used the various HTTP methods available and utilized them to perform CRUD (create, read, update and delete) operations.
 The Item Catalog project consists of developing an application that provides a list of items within a variety of categories, as well as provide a user registration and authentication system.
 
-Dependencies for Project:
+## Dependencies for Project: ##
 
 1. Vagrant
 2. Udacity Vagrantfile
 3. VirtualBox
 
-Instructions on how to run the project:
+## Instructions on how to run the project: ##
 
-How to Install:
+### How to Install: ###
 
 1. Install Vagrant & VirtualBox
 2. Clone the fullstack-nanodegree-vm
@@ -31,7 +31,7 @@ How to Install:
 
 
 
-The following are the JSON endpoints:
+## The following are the JSON endpoints: ##
 
 /restaurants/JSON
 
