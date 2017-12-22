@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+<h1>{{restaurant.name}}</h1>
+
+<div><a href = "{{url_for('restaurantsName') }}">Home</a></div>
+<p><strong>Restaurant Name: {{restaurant.name}}</strong></p>
+{% for i in items %}
+<div>
+    <p>{{i.name}}</p>
+    <p>{{i.description}}</p>
+    {% if i.price.startswith("$") %}
+    <p> {{i.price}} </p>
+    {% else %}
+    <p> {{"$"+i.price}} </p>
+    {% endif %}
+</div>
+
+{% endfor %}
+
+{% endblock %}

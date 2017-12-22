@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+{% include "messageFlash.html" %}
+
+<p><strong>Current User: {{user.name}}</strong></p>
+</br>
+<h1><strong>Restaurant Name: {{restaurant.name}}</strong></h1>
+
+<div><a href = "{{url_for('restaurantsNameL') }}">Home</a></div>
+<div><a href = "{{url_for('newMenuItem',  restaurant_id = restaurant.id) }}">Add Item</a></div>
+</br>
+</br>
+{% for i in items %}
+
+<div>
+    <p>{{i.name}}</p>
+    <p>{{i.description}}</p>
+    {% if i.price.startswith("$") %}
+    <p> {{i.price}} </p>
+    {% else %}
+    <p> {{"$"+i.price}} </p>
+    {% endif %}
+    <a href = "{{url_for('editMenuItem', restaurant_id = restaurant.id, menu_id = i.id) }}">Edit</a>
+    </br>
+    <a href = "{{url_for('deleteMenuItem', restaurant_id = restaurant.id, menu_id = i.id ) }}">Delete</a>
+    </br>
+    </br>
+</div>
+
+
+{% endfor %}
+
+{% endblock %}
