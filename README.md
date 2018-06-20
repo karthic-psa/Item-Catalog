@@ -9,9 +9,10 @@ The Item Catalog project consists of developing an application that provides a l
 
 ## Dependencies for Project: ##
 
-1. Vagrant
-2. Udacity Vagrantfile
-3. VirtualBox
+1. Flask
+2. Vagrant
+3. Udacity Vagrantfile
+4. VirtualBox
 
 ## Instructions on how to run the project: ##
 
